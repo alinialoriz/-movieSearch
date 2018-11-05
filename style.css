@@ -62,7 +62,7 @@ form button{
     font-family: 'Poppins', sans-serif;
 }
 form button:hover{
-    background-color:black;
+    background-color:rgb(26, 23, 23);
     color:white;
 }
 #search{
