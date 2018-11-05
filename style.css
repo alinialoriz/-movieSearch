@@ -131,6 +131,11 @@ h2{
    border:none;
    font-weight: 500;
 }
+@media only screen and (max-width:749px){
+.intro-bg{
+    background-attachment: scroll;
+}
+}
 @media only screen and (min-width:760px){
 .intro-bg {
     height: 78vh;
