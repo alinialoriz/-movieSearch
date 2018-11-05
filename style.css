@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    background-color:maroon;
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+}
+header{
+    background-color:rgb(80, 7, 7);
+}
+.intro-bg {
+    width: 100vw;
+    height: 70vh;
+    background-image: url('./cinema.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.intro-text{
+    width: 100vw;
+    position: absolute;
+    background-color: rgb(26, 23, 23);
+    height:8rem;
+    position: absolute;
+    bottom:0;
+}
+.intro-text p {
+    text-align: center;
+    color:whitesmoke;
+    font-family: 'Poppins',sans-serif;
+    font-size:1.5rem;
+    letter-spacing: .3rem;
+    padding:1rem;
+}
+#search-movies{
+    height:100vh;
+    margin-top: 10vh;
+}
+main{
+    padding-top: 2rem;
+    flex-grow: 1;
+}
+button:hover{
+    cursor: pointer;
+}
+form{
+    text-align: center;
+}
+form button{
+    font-size: 1.5rem;
+    margin-left:.8vw;
+    padding:.7rem;
+    background-color:rgb(253, 232, 37);
+    border-radius: 5px;
+    border-block-end-style: outset;
+    vertical-align:middle;
+    border:none;
+    color:rgb(26, 23, 23);
+    letter-spacing: .3rem;
+    font-family: 'Poppins', sans-serif;
+}
+form button:hover{
+    background-color:black;
+    color:white;
+}
+#search{
+    width: 40%; 
+    padding:.5rem;
+    vertical-align:middle;
+    font-size:1.75rem;
+    text-align:left;
+    border:none;
+    background-color: rgb(241, 240, 240);
+    font-family: 'Poppins', sans-serif;
+    
+}
+h1{
+    color:rgba(241, 240, 240, 0.959);
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .8rem;
+    text-shadow: 0.2rem 0.2rem 0.3rem black;
+    padding:1rem;
+}
+
+#results-container{
+    width:100vw;
+    background-color: rgb(44, 42, 42);
+    margin-top:10vh;
+    padding-top:1rem;
+    padding-bottom:2rem;
+    display:none;
+    font-family: 'Poppins', sans-serif;
+}
+h3{
+    font-size:1.5rem;
+    color:white;
+    text-align: center;
+}
+#movies {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 55px;
+}
+.movie-results {
+    flex-basis: 20%;
+    list-style: none;
+    padding-bottom:5rem;
+}
+.movie-results img {
+    width: auto;
+    height: 280px;
+}
+h2{
+    padding-right: 20px;
+    font-size:1rem;
+    color: whitesmoke;
+}
+.movie-results button{
+   padding:.8rem;
+   background-color:rgba(223, 214, 137, 0.986);
+   border-radius: 5px;
+   margin-bottom:.5rem;
+   letter-spacing: .2rem;
+   border:none;
+   font-weight: 500;
+}
+@media only screen and (min-width:760px){
+.intro-bg {
+    height: 78vh;
+}
+}
+@media only screen and (min-width:1000px)and (min-height:1023px){
+    .intro-bg {
+    height: 85vh;
+}
+}
