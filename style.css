@@ -16,7 +16,7 @@ header{
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-    opacity: 0.90;
+    opacity: 0.85;
 }
 .intro-text{
     width: 100vw;
@@ -130,6 +130,11 @@ h2{
    letter-spacing: .2rem;
    border:none;
    font-weight: 500;
+}
+@media only screen and (min-width:960px){
+.intro-bg{
+    background-position-y: -130px;
+}
 }
 @media only screen and (max-width:749px){
 .intro-bg{
